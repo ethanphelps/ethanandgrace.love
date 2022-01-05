@@ -9,6 +9,7 @@ const Navbar = () => {
       <div className={styles.headline}>
         <h1>grace & ethan</h1>
         <h4>are getting married</h4>
+        <h5>08/13/2022</h5>
       </div>
       <nav className={styles.nav}>
         <ul className={styles.nav_links}>
@@ -19,13 +20,13 @@ const Navbar = () => {
             <Link href="/our_story">our story</Link>
           </li>
           <li>
-            <Link href="#">registry</Link>
+            <Link href="/registry">registry</Link>
           </li>
           <li>
-            <Link href="#">where to stay</Link>
+            <Link href="/where_to_stay">where to stay</Link>
           </li>
           <li>
-            <Link href="#">gallery</Link>
+            <Link href="/gallery">gallery</Link>
           </li>
         </ul>
       </nav>
