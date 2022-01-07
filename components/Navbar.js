@@ -41,14 +41,20 @@ const Navbar = () => {
           <h5>08/13/2022</h5>
         </div>
         <div className={styles.countdown_container}>
-          <h1>countdown text</h1>
+          <h1>august 13th, 2022</h1>
           <div className={styles.countdown}>
-            <div className={styles.countdown_number} style={{gridColumnStart: 1}}>{timeLeft.days}</div>
-            <div className={styles.countdown_number} style={{gridColumnStart: 2}}>{timeLeft.hours}</div>
-            <div className={styles.countdown_number} style={{gridColumnStart: 3}}>{timeLeft.minutes}</div>
-            <div className={styles.countdown_text} style={{gridColumnStart: 1}}>days</div>
-            <div className={styles.countdown_text} style={{gridColumnStart: 2}}>hours</div>
-            <div className={styles.countdown_text} style={{gridColumnStart: 3}}>min</div>
+            <div className={styles.countdown_item}>
+              <div className={styles.countdown_number} style={{gridColumnStart: 1}}>{timeLeft.days}</div>
+              <div className={styles.countdown_text} style={{gridColumnStart: 1}}>days</div>
+            </div>
+            <div className={styles.countdown_item}>
+              <div className={styles.countdown_number} style={{gridColumnStart: 2}}>{timeLeft.hours}</div>
+              <div className={styles.countdown_text} style={{gridColumnStart: 2}}>hours</div>
+            </div>
+            <div className={styles.countdown_item}>
+              <div className={styles.countdown_number} style={{gridColumnStart: 3}}>{timeLeft.minutes}</div>
+              <div className={styles.countdown_text} style={{gridColumnStart: 3}}>mins</div>
+            </div>
           </div> 
         </div>
       </div>
