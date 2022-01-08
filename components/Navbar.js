@@ -37,8 +37,8 @@ const Navbar = () => {
       <div className={styles.headline_text_container}>
         <div className={styles.headline}>
           <h1>grace & ethan</h1>
-          <h4>are getting married</h4>
-          <h5>08/13/2022</h5>
+          <h3>are getting married</h3>
+          {/* <h5>08/13/2022</h5> */}
         </div>
         <div className={styles.countdown_container}>
           <h1>august 13th, 2022</h1>

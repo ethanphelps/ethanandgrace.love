@@ -10,14 +10,14 @@ export default function Home() {
             <b>ceremony</b>
             <p>
               saturday, the 13th of august <br/>
-              5 o'clock in the evening <br/>
-              williams' home <br/>
+              5 o&apos;clock in the evening <br/>
+              williams&apos; home <br/>
             </p>
             <b>reception</b>
             <p>
               saturday, the 13th of august <br/>
-              6 o'clock in the evening <br/>
-              williams' home <br/>
+              6 o&apos;clock in the evening <br/>
+              williams&apos; home <br/>
             </p>
             <div>
               <img className={styles.address_box} src="/address_box.png" alt=""></img>
@@ -25,7 +25,7 @@ export default function Home() {
                 <i>
                   8855 hunt club road <br/>
                   Zionsville, IN <br/>
-                  460777 <br/>
+                  46077 <br/>
                 </i>
               </p>
             </div>
@@ -41,7 +41,7 @@ export default function Home() {
                 please note that both the <br/>
                 ceremony and reception will <br/>
                 be outdoors on grass so for <br/>
-                your comofort, stiletto heels are <br/>
+                your comfort, stiletto heels are <br/>
                 not recommended
                 </i>
               </p>
