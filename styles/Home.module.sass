@@ -4,6 +4,7 @@
 $libre-baskerville: 'Libre Baskerville', serif
 
 
+
 .nav
   display: flex
   justify-content: space-around
@@ -36,8 +37,9 @@ $libre-baskerville: 'Libre Baskerville', serif
   font-weight: normal
   height: 100%
   background-color: $pale-blue
+  // background-color: red
   min-height: 100vh
-  overflow: scroll
+  // overflow: scroll
   
 .logo
   display: block
@@ -198,3 +200,99 @@ $libre-baskerville: 'Libre Baskerville', serif
   position: absolute
   z-index: 3
   transform: translate(-270px, 50px)
+
+
+@media only screen and (max-device-width: 415px)
+
+  .mobile_banner
+    margin-top: 30px
+    margin-left: -5px
+    max-width: 415px
+    width: auto
+    height: auto
+    display: block
+    margin-bottom: 0
+    padding-bottom: 0
+
+  .mobile_headline_container
+    // margin-top: 100px
+
+  .mobile_headline
+    color: $baby-blue
+    margin: auto
+    text-align: center
+    padding-top: 30px
+
+  .mobile_headline h1 
+    padding-top: 10px
+    font-size: 2.8rem
+
+  .mobile_headline h3
+    font-size: 1.2rem
+    margin-top: -10px
+
+  .watercolor
+    max-width: 415px
+    width: auto
+    height: auto
+    display: block
+  
+  // .main
+  //   display: block
+
+  .row
+    display: block
+  
+  .countdown_container
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: auto
+    margin-top: -30px
+    color: $baby-blue
+
+  .countdown_container h1 
+    font-size: 2rem
+    margin-top: 0
+    padding-top: 0
+
+  .countdown
+    display: grid
+    grid-template-columns: 33% 33% 33%
+    grid-template-rows: 33% 33% 33%
+    row-gap: 10px
+    column-gap: 25px
+    margin-left: -44px
+    color: white
+
+  .countdown_item
+    display: flex
+    flex-direction: column
+    height: max-content
+    background-color: #9bbfdf6b
+    padding: 15px
+
+  .countdown_number
+    text-align: center
+    font-size: 1.5rem
+
+  .countdown_text
+    text-align: center
+    font-size: 1.1rem
+    font-style: italic
+    
+  .suggested_attire
+    margin-top: 60px
+    margin-left: 20px
+
+  .subsection_header
+    font-style: normal
+
+  .header
+    font-size: 1.5rem
+    font-style: italic
+
+  .subsection
+    text-align: center
+    font-style: italic
+    max-width: 250px

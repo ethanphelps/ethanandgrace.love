@@ -13,7 +13,7 @@ const timeTillWedding = () => {
   const days = Math.floor(totalSeconds / (60 * 60 * 24));
   const hours = totalHours % 24;
   const minutes = totalMinutes % 60;
-  console.log(`${days} days, ${hours} hours, ${minutes} minutes`);
+  // console.log(`${days} days, ${hours} hours, ${minutes} minutes`);
 
   return { days: days, hours: hours, minutes: minutes }
 }
@@ -29,6 +29,8 @@ const Navbar = () => {
     // avoids memory leak if component unmounts before timer is complete
     return () => clearTimeout(timer);
   });
+
+  // console.log("regular nav bar");
 
   return (
     <>
