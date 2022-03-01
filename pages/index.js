@@ -1,5 +1,6 @@
 import styles from "../styles/Home.module.sass";
 import useMediaQuery from "../hooks/useMediaQuery";
+import Gallery from "../pages/gallery";
 
 export default function Home() {
   const isPhone = useMediaQuery('(max-width: 415px)');
@@ -79,20 +80,27 @@ export default function Home() {
             <section className={styles.row}>
               <div className={styles.subsection}>
                 <h3 className={styles.header}>where to stay</h3>
-                <h3 className={styles.subsection_header}>hotel carmichael</h3>
-                  <p>
-                    a classy botique hotel located in the heart of carmel, indiana. 
-                  </p>
-                <h3 className={styles.subsection_header}>brick street inn</h3>
-                  <p>
-                    a quaint bed-and-breakfast located in downtown zionsville on main street. only has eight rooms total
-                  </p>
+                <h3 className={styles.subsection_header}>
+                  <a href="https://www.hotelcarmichael.com" className={styles.hotel_links}>hotel carmichael</a>
+                </h3>
+                <p>
+                  a classy botique hotel located in the heart of carmel, indiana. 25 minutes from the williams residence.
+                </p>
+                <button className={styles.hotel_button}>website</button>
+                <h3 className={styles.subsection_header}>
+                  <a href="https://brickstreetinn.com" className={styles.hotel_links}>brick street inn</a>
+                </h3>
+                <p>
+                  a quaint bed-and-breakfast located in downtown zionsville on main street. only has eight rooms total. 5 minutes from the williams residence
+                </p>
+                <button className={styles.hotel_button}>website</button>
               </div>
             </section>
 
             <section className={styles.subsection}>
               <div className={styles.gallery}>
                <h3 className={styles.header}>gallery</h3>
+               <Gallery/>
               </div>
             </section>
           </div>

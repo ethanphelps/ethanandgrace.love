@@ -201,6 +201,62 @@ $libre-baskerville: 'Libre Baskerville', serif
   z-index: 3
   transform: translate(-270px, 50px)
 
+.grid_container
+  padding-left: 50px
+  padding-right: 50px
+
+#photos 
+  /* Prevent vertical gaps */
+  line-height: 2.5
+   
+  -webkit-column-count: 5
+  -webkit-column-gap:   0px
+  -moz-column-count:    5
+  -moz-column-gap:      0px
+  column-count:         5
+  column-gap:           0px
+
+  // margin-left: 50px
+  // margin-right: 50px
+
+  // padding-left: 60px
+  // padding-right: 80px
+
+.grid_item
+  width: 100% !important
+  height: auto !important
+  // display: block
+
+// @media only screen and (min-device-width: 415px)
+@media only screen and (max-width: 1200px) and (min-device-width: 415px)
+  #photos 
+    -moz-column-count:    4
+    -webkit-column-count: 4
+    column-count:         4
+  
+
+@media only screen and (max-width: 1000px) and (min-device-width: 415px)
+  #photos 
+    -moz-column-count:    3
+    -webkit-column-count: 3
+    column-count:         3
+  
+
+@media only screen and (max-width: 800px) and (min-device-width: 415px)
+  #photos 
+    -moz-column-count:    2
+    -webkit-column-count: 2
+    column-count:         2
+    
+
+// @media only screen and (max-device-width: 415px)
+#mobilePhotos 
+  -moz-column-count:    1
+  -webkit-column-count: 1
+  column-count:         1
+  line-height: 2.5
+
+  
 
 @media only screen and (max-device-width: 415px)
 
@@ -237,9 +293,6 @@ $libre-baskerville: 'Libre Baskerville', serif
     height: auto
     display: block
   
-  // .main
-  //   display: block
-
   .row
     display: block
   
@@ -296,3 +349,22 @@ $libre-baskerville: 'Libre Baskerville', serif
     text-align: center
     font-style: italic
     max-width: 250px
+
+  .hotel_links 
+    transition: all 0.3s ease 0s
+
+  .hotel_links:hover
+    color: $darker-blue
+
+  .hotel_links:focus 
+    color: $darker-blue 
+
+  .hotel_button
+    border: 2px solid $baby-blue
+    background-color: $pale-blue
+    color: $baby-blue
+    font-family: $libre-baskerville
+    margin-bottom: 5px
+
+  // #photos
+  //   min-width: 415px
