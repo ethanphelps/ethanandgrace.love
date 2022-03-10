@@ -69,13 +69,13 @@ const Navbar = () => {
             <Link href="/our_story">our story</Link>
           </li>
           <li>
-            <Link href="http://www.zola.com/registry/g-and-e">registry</Link>
-          </li>
-          <li>
             <Link href="/where_to_stay">where to stay</Link>
           </li>
           <li>
             <Link href="/gallery">gallery</Link>
+          </li>
+          <li>
+            <Link href="http://www.zola.com/registry/g-and-e">registry</Link>
           </li>
         </ul>
       </nav>
