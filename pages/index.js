@@ -10,24 +10,25 @@ export default function Home() {
         <section className={styles.row}>
           {isPhone ? null : <img className={styles.watercolor} src="/house_watercolor.png" alt="Wedding Venue"></img>}
           <div className={styles.schedule}>
-            <h3 className={styles.header}>schedule of events</h3>
+            {/* <h3 className={styles.header}>schedule of events</h3> */}
+            <h3 className={styles.header}>when & where</h3>
             <b>ceremony</b>
             <p>
               saturday, the 13th of august <br/>
-              5 o&apos;clock in the evening <br/>
-              williams&apos; home <br/>
+              {/*5 o&apos;clock*/} in the evening <br/>
+              at the williams&apos; home <br/>
             </p>
-            <b>reception</b>
-            <p>
+            <b>reception to follow</b>
+            {/* <p>
               saturday, the 13th of august <br/>
               6 o&apos;clock in the evening <br/>
               williams&apos; home <br/>
-            </p>
+            </p> */}
             <div>
               <img className={styles.address_box} src="/address_box.png" alt=""></img>
               <p className={styles.address}>
                 <i>
-                  8855 hunt club road <br/>
+                  8855 Hunt Club Road <br/>
                   Zionsville, IN <br/>
                   46077 <br/>
                 </i>
@@ -39,14 +40,22 @@ export default function Home() {
         <section className={styles.row}>
           <div className={styles.suggested_attire}>
               <h3 className={styles.header}>suggested attire</h3>
-              <p>black tie optional</p>
+              {/* <p>black tie optional</p> */}
+              <p>formal</p>
               <p>
-                <i>
+                {/* <i>
                 please note that both the <br/>
                 ceremony and reception will <br/>
                 be outdoors on grass so for <br/>
                 your comfort, stiletto heels are <br/>
                 not recommended
+                </i> */}
+                <i>
+                please note that both the <br/>
+                ceremony and reception will <br/>
+                be on grass so keep this in <br/>
+                mind when choosing <br/>
+                your footwear
                 </i>
               </p>
           </div>
@@ -80,20 +89,37 @@ export default function Home() {
             <section className={styles.row}>
               <div className={styles.subsection}>
                 <h3 className={styles.header}>where to stay</h3>
-                <h3 className={styles.subsection_header}>
-                  <a href="https://www.hotelcarmichael.com" className={styles.hotel_links}>hotel carmichael</a>
-                </h3>
-                <p>
-                  a classy botique hotel located in the heart of carmel, indiana. 25 minutes from the williams residence.
-                </p>
-                <button className={styles.hotel_button}>website</button>
-                <h3 className={styles.subsection_header}>
-                  <a href="https://brickstreetinn.com" className={styles.hotel_links}>brick street inn</a>
-                </h3>
-                <p>
-                  a quaint bed-and-breakfast located in downtown zionsville on main street. only has eight rooms total. 5 minutes from the williams residence
-                </p>
-                <button className={styles.hotel_button}>website</button>
+                
+                <div className={styles.hotel_section}>
+                  <h3 className={styles.subsection_header}>
+                    hotel carmichael
+                  </h3>
+                  <p>
+                    a classy botique hotel located in the heart of carmel, indiana. 25 minutes from the williams residence.
+                  </p>
+                  <a href="https://www.hotelcarmichael.com" className={styles.hotel_button}>website</a>
+                </div>
+
+                <div className={styles.hotel_section}>
+                  <h3 className={styles.subsection_header}>
+                    brick street inn
+                  </h3>
+                  <p>
+                    a quaint bed-and-breakfast located in downtown zionsville on main street. only has eight rooms total. 5 minutes from the williams residence
+                  </p>
+                  <a href="https://brickstreetinn.com" className={styles.hotel_button}>website</a>
+                </div>
+                
+                <div className={styles.hotel_section}>
+                  <h3 className={styles.subsection_header}>
+                    home2 suites
+                  </h3>
+                  <p>
+                    a convenient spot to stay in whitestown about 10 minutes from the williams residence
+                  </p>
+                  <a href="https://www.hilton.com/en/hotels/indetht-home2-suites-whitestown-indianapolis-nw/" className={styles.hotel_button}>website</a>
+                </div>
+                
               </div>
             </section>
 

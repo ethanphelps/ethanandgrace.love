@@ -1,10 +1,14 @@
+import dynamic from 'next/dynamic'
 import styles from "../styles/Home.module.sass";
 import useWindowDimensions from "../hooks/useWindowDimensions";
 import useMediaQuery from "../hooks/useMediaQuery";
 import { useEffect, useRef } from "react";
 
 const ImageGrid = (props) => {
-  const { width, height } = useWindowDimensions();
+  useEffect(() => {
+    window.dispatchEvent(new Event('resize'));
+  }, []);
+  // const { width, height } = useWindowDimensions();
   const isPhone = useMediaQuery('(max-device-width: 415px)');
 
   let style = {}
@@ -36,8 +40,17 @@ const ImageGrid = (props) => {
 }
 
 const GridItem = (props) => {
+  // let width = window.innerWidth;
+  // let height = window.innerHeight;
+  let { width, height } = useWindowDimensions();
+  
+  useEffect(() => {
+    window.dispatchEvent(new Event('resize'));
+  }, []);
 
-  const { width, height } = useWindowDimensions();
+  // width = useWindowDimensions();
+  // height = useWindowDimensions();
+
   const isPhone = useMediaQuery('(max-device-width: 415px)');
   let style;
   const decrease = 70;
@@ -66,7 +79,7 @@ const GridItem = (props) => {
           ></img>
 }
 
-export default function Gallery() {
+const Gallery = () => {
   const initialWidth = useRef(400)
   useEffect(() => {
     const isPhone = window.innerWidth <= 415;
@@ -94,3 +107,11 @@ export default function Gallery() {
     </div>
     );
 }
+
+/*
+  export Gallery dynanimically without server-side rendering to avoid window not
+  defined error on page reload
+*/
+export default dynamic(() => Promise.resolve(Gallery), {
+  ssr: false
+})
