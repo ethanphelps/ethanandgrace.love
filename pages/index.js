@@ -2,6 +2,7 @@ import styles from "../styles/Home.module.sass";
 import useMediaQuery from "../hooks/useMediaQuery";
 import Gallery from "../pages/gallery";
 import WhereToStay from "./where_to_stay";
+import OurStory from "./our_story";
 
 export default function Home() {
   const isPhone = useMediaQuery('(max-width: 415px)');
@@ -65,9 +66,9 @@ export default function Home() {
 
         {!isPhone ? null : 
           <div className={styles.mobile_scroll_sections}>
-            <section className={styles.row}>
+            {/* <section className={styles.row}> */}
               <div className={styles.subsection}>
-                <h3 className={styles.header}>our story</h3>
+                {/* <h3 className={styles.header}>our story</h3>
                 <h3 className={styles.subsection_header}>how we met</h3>
                 <p>
                   on a trip to gulf shores, alabama, grace commented on the music ethan was playing. we struck up a conversation that lasted for hours. the rest is history!
@@ -83,9 +84,10 @@ export default function Home() {
                   tailgate pizza on demonbreun street <br/>
                   being concert buddies <br/>
                   getting our puppy cashew who we love so much<br/>
-                  </p>
+                  </p> */}
+                  <OurStory/>
               </div>
-            </section>
+            {/* </section> */}
 
             <section className={styles.row}>
               <div className={styles.subsection}>

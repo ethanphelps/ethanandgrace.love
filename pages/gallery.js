@@ -17,17 +17,6 @@ const ImageGrid = (props) => {
   if(!isPhone) {
     const offset = 15
     const margin = 50
-    // if(width > 1200) {
-    //   style = {columnWidth: width/5 - decrease}
-    // } else if(width > 1000) {
-    //   style = {columnWidth: width/4 - decrease}
-    // } else if(width > 800) {
-    //   style = {columnWidth: width/3 - decrease}
-    // } else if(width > 400) {
-    //   style = {columnWidth: width/2 - decrease}
-    // } else {
-    //   style = {columnWidth: width}
-    // }
     style["marginLeft"] = margin/4 - offset;
     style["marginRight"] = margin;
   }
@@ -40,16 +29,11 @@ const ImageGrid = (props) => {
 }
 
 const GridItem = (props) => {
-  // let width = window.innerWidth;
-  // let height = window.innerHeight;
   let { width, height } = useWindowDimensions();
   
   useEffect(() => {
     window.dispatchEvent(new Event('resize'));
   }, []);
-
-  // width = useWindowDimensions();
-  // height = useWindowDimensions();
 
   const isPhone = useMediaQuery('(max-device-width: 415px)');
   let style;
@@ -89,15 +73,24 @@ const Gallery = () => {
 
   const images = [
     "bees.jpg",
-    "kissing.jpg",
     "big-tree.jpg",
     "on_blanket.jpg",
     "ring_a_ding.jpg",
-    "banner.png",
-    "house_watercolor.png",
-    "bees.jpg",
-    "ring_a_ding.jpg",
-    "big-tree.jpg"
+    "big-tree.jpg",
+    "kissing.jpg",
+    "bench.jpeg",
+    "bridge.jpeg",
+    "champagne.jpg",
+    "east.jpeg",
+    "florida.jpeg",
+    "formal.jpeg",
+    "graduate.jpeg",
+    "photo_wall.jpeg",
+    "skiing.jpeg",
+    "telluride.jpeg",
+    "waterfall.jpeg",
+    "yellowstone.jpeg"
+
   ] 
   return (
     <div className={styles.grid_container}>
