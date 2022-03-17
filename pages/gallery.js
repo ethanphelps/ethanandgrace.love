@@ -74,22 +74,30 @@ const Gallery = () => {
   const images = [
     "bees.jpg",
     "big-tree.jpg",
-    "on_blanket.jpg",
     "ring_a_ding.jpg",
-    "big-tree.jpg",
+    "cashew_portrait.jpg",
+    "on_blanket.jpg",
+    "arboretum.jpg",
     "kissing.jpg",
     "bench.jpeg",
     "bridge.jpeg",
     "champagne.jpg",
+    "mutts.jpg",
     "east.jpeg",
-    "florida.jpeg",
-    "formal.jpeg",
+    "cashew_shirt.jpg",
     "graduate.jpeg",
+    "florida.jpeg",
+    "couch_puppy.jpg",
+    "formal.jpeg",
+    "cashew_hanger.jpg",
     "photo_wall.jpeg",
+    "nashville_dp.jpg",
     "skiing.jpeg",
     "telluride.jpeg",
     "waterfall.jpeg",
-    "yellowstone.jpeg"
+    "yellowstone.jpeg",
+    "cashew_hat.jpg",
+    
 
   ] 
   return (

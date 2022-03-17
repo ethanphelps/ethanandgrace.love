@@ -14,8 +14,8 @@ export default function OurStory() {
             <img className={styles.ring_pic} src="/ring_a_ding.jpg" alt=""></img>
           </div> 
         }
-        <div className={styles.story}>
-          {!isPhone ? null : <h3 className={styles.header}>our story</h3> }
+        <div className={isPhone ? styles.story : styles.desktop_story}>
+          {!isPhone ? null : <h3 className={styles.header} style={{fontStyle: 'italic'}}>our story</h3> }
           <h3 className={styles.subsection_header}>how we met</h3>
           <p>
             on a trip to gulf shores, alabama, grace commented on the music ethan was playing. we struck up a conversation that lasted for hours. the rest is history!

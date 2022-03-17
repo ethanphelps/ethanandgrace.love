@@ -40,27 +40,18 @@ export default function Home() {
           </div>
         </section>
         <section className={styles.row}>
-          <div className={styles.suggested_attire}>
+          <div className={styles.subsection} style={{marginTop: '4.5rem'}}>
               <h3 className={styles.header}>suggested attire</h3>
               {/* <p>black tie optional</p> */}
-              <p>formal</p>
+              <h3 className={styles.subsection_header}>formal</h3>
               <p>
-                {/* <i>
-                please note that both the <br/>
-                ceremony and reception will <br/>
-                be outdoors on grass so for <br/>
-                your comfort, stiletto heels are <br/>
-                not recommended
-                </i> */}
-                <i>
                 please note that both the <br/>
                 ceremony and reception will <br/>
                 be on grass so keep this in <br/>
                 mind when choosing <br/>
                 your footwear
-                </i>
               </p>
-          </div>
+          </div> 
           {isPhone ? null : <img className={styles.bees} src="/bees.jpg" alt="Tree"></img>}
         </section>
 
@@ -92,6 +83,12 @@ export default function Home() {
             <section className={styles.row}>
               <div className={styles.subsection}>
                 <WhereToStay/>  
+              </div>
+            </section>
+
+            <section className={styles.row}>
+              <div className={styles.subsection}>
+                <a href="https://www.zola.com/registry/g-and-e" className={styles.registry_button}>registry</a>
               </div>
             </section>
 
