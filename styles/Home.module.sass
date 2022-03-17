@@ -4,6 +4,7 @@
 $libre-baskerville: 'Libre Baskerville', serif
 
 
+
 .nav
   display: flex
   justify-content: space-around
@@ -16,11 +17,12 @@ $libre-baskerville: 'Libre Baskerville', serif
 
 .nav_links
   list-style: none
+  white-space: nowrap
 
 .nav_links li
   display: inline-block
   padding: 0px 20px
-  margin: 0px 30px
+  margin: 0px 1rem
 
 .nav_links li a
   transition: all 0.3s ease 0s
@@ -36,8 +38,9 @@ $libre-baskerville: 'Libre Baskerville', serif
   font-weight: normal
   height: 100%
   background-color: $pale-blue
+  // background-color: red
   min-height: 100vh
-  overflow: scroll
+  // overflow: scroll
   
 .logo
   display: block
@@ -79,6 +82,7 @@ $libre-baskerville: 'Libre Baskerville', serif
 .header
   color: $darker-blue
   font-style: italic
+  font-size: 1.5rem
 
 .address_box
   position: absolute
@@ -198,3 +202,247 @@ $libre-baskerville: 'Libre Baskerville', serif
   position: absolute
   z-index: 3
   transform: translate(-270px, 50px)
+
+.grid_container
+  padding-left: 50px
+  padding-right: 50px
+
+.hotel_button
+  border: 2px solid $baby-blue
+  background-color: $pale-blue
+  color: $baby-blue
+  font-family: $libre-baskerville
+  font-style: normal
+  font-size: .8rem
+  padding-left: 5px
+  padding-right: 5px
+  padding-top: 2px
+  padding-bottom: 2px
+
+.registry_button
+  border: 2px solid $darker-blue
+  background-color: $pale-blue
+  color: $darker-blue
+  font-family: $libre-baskerville
+  font-style: italic
+  font-size: 1.5rem
+  padding-left: 14px
+  padding-right: 14px
+  padding-top: 5px
+  padding-bottom: 8px
+  display: inline-block
+  margin-top: 30px
+  margin-bottom: -20px
+
+.subsection
+  text-align: center
+  font-style: italic
+  max-width: 250px
+  margin-bottom: 3rem
+
+.desktop_story
+  text-align: center
+  font-style: italic
+  max-width: 250px
+  font-size: 0.9rem
+
+.desktop_story h3
+  font-style: italic
+  font-size: 1.5rem
+  color: $darker-blue
+
+.desktop_story p
+  font-style: normal
+
+#photos 
+  /* Prevent vertical gaps */
+  line-height: 2.5
+   
+  -webkit-column-count: 5
+  -webkit-column-gap:   0px
+  -moz-column-count:    5
+  -moz-column-gap:      0px
+  column-count:         5
+  column-gap:           0px
+
+  // margin-left: 50px
+  // margin-right: 50px
+
+  // padding-left: 60px
+  // padding-right: 80px
+
+.grid_item
+  width: 100% !important
+  height: auto !important
+  // display: block
+
+// @media only screen and (min-device-width: 415px)
+@media only screen and (max-width: 1200px) and (min-device-width: 415px)
+  #photos 
+    -moz-column-count:    4
+    -webkit-column-count: 4
+    column-count:         4
+  
+
+@media only screen and (max-width: 1000px) and (min-device-width: 415px)
+  #photos 
+    -moz-column-count:    3
+    -webkit-column-count: 3
+    column-count:         3
+  
+
+@media only screen and (max-width: 800px) and (min-device-width: 415px)
+  #photos 
+    -moz-column-count:    2
+    -webkit-column-count: 2
+    column-count:         2
+    
+
+// @media only screen and (max-device-width: 415px)
+#mobilePhotos 
+  -moz-column-count:    1
+  -webkit-column-count: 1
+  column-count:         1
+  line-height: 2.5
+
+  
+
+@media only screen and (max-device-width: 415px)
+
+  .mobile_banner
+    margin-top: 30px
+    margin-left: -5px
+    max-width: 415px
+    width: auto
+    height: auto
+    display: block
+    margin-bottom: 0
+    padding-bottom: 0
+
+  .mobile_headline_container
+    // margin-top: 100px
+
+  .mobile_headline
+    color: $baby-blue
+    margin: auto
+    text-align: center
+    padding-top: 30px
+
+  .mobile_headline h1 
+    padding-top: 10px
+    font-size: 2.8rem
+
+  .mobile_headline h3
+    font-size: 1.2rem
+    margin-top: -10px
+
+  .watercolor
+    max-width: 415px
+    width: auto
+    height: auto
+    display: block
+  
+  .row
+    display: block
+  
+  .countdown_container
+    display: flex
+    flex-direction: column
+    align-items: center
+    margin: auto
+    margin-top: -30px
+    color: $baby-blue
+
+  .countdown_container h1 
+    font-size: 2rem
+    margin-top: 0
+    padding-top: 0
+
+  .countdown
+    display: grid
+    grid-template-columns: 33% 33% 33%
+    grid-template-rows: 33% 33% 33%
+    row-gap: 10px
+    column-gap: 25px
+    margin-left: -44px
+    color: white
+
+  .countdown_item
+    display: flex
+    flex-direction: column
+    height: max-content
+    background-color: #9bbfdf6b
+    padding: 15px
+
+  .countdown_number
+    text-align: center
+    font-size: 1.5rem
+
+  .countdown_text
+    text-align: center
+    font-size: 1.1rem
+    font-style: italic
+    
+  .suggested_attire
+    margin-top: 60px
+    margin-left: 20px
+
+  .subsection_header
+    font-style: normal
+
+  .header
+    font-size: 1.8rem
+    font-style: italic
+
+  .subsection
+    text-align: center
+    font-style: italic
+    max-width: 250px
+    margin-bottom: 3rem
+
+  .hotel_links 
+    transition: all 0.3s ease 0s
+
+  .hotel_links:hover
+    color: $darker-blue
+
+  .hotel_links:focus 
+    color: $darker-blue  
+
+  .hotel_section
+    margin-bottom: 30px
+
+  .gallery
+    margin-top: 5rem
+
+  .schedule
+    margin-top: 3rem
+
+  .suggested_attire
+    margin-top: 4.5rem
+    margin-bottom: 2rem
+
+  // #photos
+  //   min-width: 415px
+
+
+@media only screen and (min-width: 416px)
+  .hotels_container
+    display: flex
+    align-items: center
+    flex-direction: column
+    color: $baby-blue
+    text-align: center
+    font-style: italic
+    max-width: 250px
+
+  .subsection_header
+    font-style: normal
+
+  .hotel_section
+    margin-bottom: 10px
+
+  .desktop_hotels_container
+    display: flex
+    align-items: center
+    flex-direction: column
