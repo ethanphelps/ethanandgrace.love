@@ -17,7 +17,7 @@ export default function Home() {
             <b>ceremony</b>
             <p>
               saturday, the 13th of august <br/>
-              {/*5 o&apos;clock*/} in the evening <br/>
+              half past five o&apos;clock in the evening <br/>
               at the williams&apos; home <br/>
             </p>
             <b>reception to follow</b>
